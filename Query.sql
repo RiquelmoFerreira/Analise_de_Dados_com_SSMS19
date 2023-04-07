@@ -23,13 +23,21 @@ GROUP BY genero
 ORDER BY total DESC;
 
 
--- 3) Analisando o desempenho dos alugueis identificando quais filmes tiveram uma nota acima da média
+-- 3) Analisando o desempenho dos alugueis identificando o TOP 10 filmes que tiveram uma nota acima da média
 
-USE hashtagmovie
+WITH id_titulo AS (
+	SELECT id_filme, titulo
+	FROM filmes
+	GROUP BY id_filme, titulo
+)
+
 SELECT 
-	*
-FROM alugueis
-WHERE nota >= (SELECT AVG(nota) FROM alugueis);
+	TOP (10) *
+FROM alugueis as alu
+LEFT JOIN id_titulo
+	ON alu.id_filme = id_titulo.id_filme
+WHERE nota >= (SELECT AVG(nota) FROM alugueis)
+ORDER BY nota DESC;
 
 
 -- 4) Criando Views para guardar os resultados
@@ -53,7 +61,18 @@ CREATE VIEW resultado2 AS
 
 
 CREATE VIEW resultado3 AS
+	WITH id_titulo AS (
+		SELECT id_filme, titulo
+		FROM filmes
+		GROUP BY id_filme, titulo
+	)
+
 	SELECT 
-		*
-	FROM alugueis
-	WHERE nota >= (SELECT AVG(nota) FROM alugueis);
+		TOP (10) *
+	FROM alugueis as aluguel
+	LEFT JOIN id_titulo
+		ON aluguel.id_filme = id_titulo.id_filme
+	WHERE nota >= (SELECT AVG(nota) FROM alugueis)
+	ORDER BY nota DESC;
+
+
