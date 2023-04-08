@@ -7,6 +7,9 @@ Esse projeto foi feito durante o treino prático do case SQL para Análise de Da
 
 O objetivo desse projeto foi criar um Dashboard com os preços médios e o TOP 10 de Filmes com Nota acima da Média usando as informações do Banco de Dados hashtagmovies que pertence a Hashtag Progamação, para a análise foram usados o SSMS 19 e o Microsoft Excel.
 
+*O Banco de Dados foi adaptado para o SSMS 19, mas pertence ao grupo Hashtag Programação.
+
+
 ## Visão Geral do SSMS 19
 ![SSMSGeral](https://github.com/RiquelmoFerreira/Analise_de_Dados_com_SSMS19/blob/main/SQL.png)
 
