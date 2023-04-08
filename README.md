@@ -9,6 +9,7 @@ O objetivo desse projeto foi criar um Dashboard com os preços médios e o TOP 1
 
 *O Banco de Dados foi adaptado para o SSMS 19, mas pertence ao grupo Hashtag Programação.
 
+Usando os Gráficos de Barras podemos analisar que o maior preço médio por gênero seria para o Gênero Arte, mas em nosso Banco de Dados só existe uma produção com este gênero, então o maior preço médio real seria para Ação e Aventura. Analisando o mesmo gráfico, mas agora apenas com títulos lançados em 2011, podemos ver que o maior preço médio é do gênero Mistério e Suspense. Por fim, podemos ver em um gráfico Treemap quais são os TOP 10 filmes com pontuação acima da média.
 
 ## Visão Geral do SSMS 19
 ![SSMSGeral](https://github.com/RiquelmoFerreira/Analise_de_Dados_com_SSMS19/blob/main/SQL.png)
