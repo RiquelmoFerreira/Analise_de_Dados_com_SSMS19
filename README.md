@@ -1,6 +1,9 @@
 # Analise de Dados Hashtag Movies com SSMS 19
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/RiquelmoFerreira/Analise_de_Dados_com_SSMS19/blob/main/LICENSE)
 
+# Project in English:
+<a href="https://github.com/RiquelmoFerreira/Data_Analysis_with_SSMS19" target="_blank" rel="noreferrer noopener">Data Analysis with SSMS 19</a>
+
 # Sobre o projeto
 
 Esse projeto foi feito durante o treino prático do case SQL para Análise de Dados conduzido por Hashtag Programação
